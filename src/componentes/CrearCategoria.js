@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React,{ useState } from "react"; //importamos archivos
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import { useNavigate } from 'react-router-dom';
