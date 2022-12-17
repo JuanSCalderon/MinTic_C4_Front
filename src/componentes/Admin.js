@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";//agregar funcion de useEffect, useState 
 import { useNavigate } from 'react-router-dom';
 import crud from "../conexiones/crud";
 import Header from "./Header";
