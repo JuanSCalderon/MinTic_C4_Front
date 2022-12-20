@@ -1,33 +1,33 @@
 import React from "react";
-import { Link  } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
-  
+
   return (
-        <aside className="md:w-80 lg:w-60 px-5 py-10 bg-slate-500">
-            
-            
-             <Link
-                className="bg-violet-600 w-full p-3 text-white uppercase font-bold mt-5 text-center rounded-lg"
-                to={"/crear-categoria"}
-            >
-        Crear Categoria
+    <aside className="md:w-80 lg:w-60 px-5 py-10 bg-gradient-to-r from-yellow-400 to-black">
+
+
+      <Link
+        className="bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200 w-full p-3 text-black uppercase font-bold mt-5 text-center rounded-lg"
+        to={"/crear-categoria"}
+      >
+        Create Category
       </Link>
 
       <div className="py-10">
-      <Link
-                className="bg-violet-600 w-full p-3 text-white uppercase font-bold mt-5 text-center rounded-lg"
-                to={"/admin"}
-            >
-        Admin Categorias
-      </Link>
+        <Link
+          className="bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200 w-full p-3 text-black uppercase font-bold mt-5 text-center rounded-lg"
+          to={"/admin"}
+        >
+          Admin Categories
+        </Link>
 
       </div>
 
-      
-      
-        </aside>
-    );
+
+
+    </aside>
+  );
 }
 
 export default Sidebar;

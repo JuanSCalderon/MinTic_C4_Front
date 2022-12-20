@@ -26,31 +26,37 @@ const Home = () => {
 
 
   return (
-    <main className='flex-1'>
-      <div className='flex justify-center md:w-2/3 lg:w-2/5'>
-        <h1 className="inline p-8 bg-gradient-to-r from-indigo-200 via-violet-700 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-          Proyecto G12
-        </h1>
+    <main className='flex-1 bg-black '>
+      <div className="md:flex justify-end">
         <Link
-          className="block text-center my-5 text-gray-100"
+          className="py-4 px-3 bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200 bg-clip-text font-display text-xl text-transparent "
           to={"/login"}
         >
-          Iniciar Sesión
+          Sign In
         </Link>
+
+      </div>
+      <div className="md:flex justify-center bg-white bg-bottom " style={{
+        backgroundImage: `url("https://res.cloudinary.com/djhhrlrtg/image/upload/v1671547538/musical-notes-pattern-black-background_1017-32303_dmrezo.jpg")`
+
+      }}>
+        <h1 className="inline p-8 bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
+          Golden Harmony
+        </h1>
       </div>
       <div className="flex-1 bg-white">
-        <div className="py-16 sm:py-24 xl:mx-auto xl:max-w-7xl xl:px-8">
+        <div className="py-16 sm:py-10 xl:mx-auto xl:max-w-7xl xl:px-8">
           <div className="px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900">Shop by Category</h2>
-            <a href="#" className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
-              Browse all categories
+            <a href="#" className="hidden text-xl font-semibold text-black hover:bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200 font-display  sm:block">
+              View All
               <span aria-hidden="true"> &rarr;</span>
             </a>
           </div>
 
           <div className="mt-4 flow-root">
             <div className="-my-2">
-              <div className="relative box-content h-80 overflow-x-auto py-2 xl:overflow-visible">
+              <div className="relative box-content h-80 overflow-x-auto py-8 xl:overflow-visible">
                 <div className="min-w-screen-xl absolute flex space-x-8 px-4 sm:px-6 lg:px-8 xl:relative xl:grid xl:grid-cols-5 xl:gap-x-8 xl:space-x-0 xl:px-0">
                   {categoria.map((category) => (
                     <a
@@ -73,18 +79,18 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-6 px-4 sm:hidden">
+          {/* <div className="mt-6 px-4 sm:hidden">
             <a href="#" className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500">
               Browse all categories
               <span aria-hidden="true"> &rarr;</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <div className="bg-gray-300">
+      <div className="bg-yellow-300">
         <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-xl font-bold text-gray-900">Customers also bought</h2>
+          <h1 className="text-3xl font-bold text-gray-900">Products</h1>
 
           <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
             {productos.map((product) => (
@@ -99,20 +105,20 @@ const Home = () => {
                   </div>
                   <div className="relative mt-4">
                     <h3 className="text-sm font-medium text-gray-900">{product.nombre}</h3>
-                    <p className="mt-1 text-sm text-gray-500">{product.stock}</p>
+                    <p className="mt-1 text-sm text-grey-700">Stock: {product.stock}</p>
                   </div>
                   <div className="absolute inset-x-0 top-0 flex h-72 items-end justify-end overflow-hidden rounded-lg p-4">
                     <div
                       aria-hidden="true"
                       className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-black opacity-50"
                     />
-                    <p className="relative text-lg font-semibold text-white">{product.precio}</p>
+                    <p className="relative text-lg font-semibold text-white">${product.precio.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</p>
                   </div>
                 </div>
                 <div className="mt-6">
                   <a
                     href={product.href}
-                    className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200"
+                    className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-yellow-400"
                   >
                     Add to bag<span className="sr-only">, {product.name}</span>
                   </a>
@@ -122,7 +128,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </main>
+    </main >
   );
 }
 
