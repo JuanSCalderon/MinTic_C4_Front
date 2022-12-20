@@ -65,7 +65,7 @@ const CrearCategoria = () => {
         <Sidebar />
         <main className="flex-1 bg-gray-100">
           <div className="mt-10 flex justify-center">
-            <h1 className="inline bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text font-display text-4xl text-transparent t">
+            <h1 className="inline bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text font-display text-4xl text-transparent ">
               Create Category
             </h1>
           </div>

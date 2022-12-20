@@ -41,7 +41,7 @@ const CrearProductos = () => {
     //console.log(data);
     const response = await crud.POST(`/api/productos`, data);
     const mensaje = response.msg;
-    const mensaje1 = "la categoria se creo correctamente";
+    const mensaje1 = "The category wasn't created successfully";
     swal({
       title: 'Información',
       text: mensaje1,
@@ -72,10 +72,10 @@ const CrearProductos = () => {
       <Header />
       <div className="md:flex md:min-h-screen">
         <Sidebar />
-        <main className="flex-1">
+        <main className="flex-1 bg-gray-100" >
           <div className="mt-10 flex justify-center">
-            <h1 className="inline bg-gradient-to-r from-indigo-200 via-violet-700 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-              crear Productos
+            <h1 className="inline bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text font-display text-4xl text-transparent">
+              Create Products
             </h1>
           </div>
 
@@ -90,8 +90,8 @@ const CrearProductos = () => {
                   type="nombre"
                   id="nombre"
                   name="nombre"
-                  placeholder="Nombre"
-                  className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
+                  placeholder="Name"
+                  className="w-full mt-3 p-3 border rounded-3xl bg-gray-50"
                   value={nombre}
                   onChange={onChange}
                 />
@@ -100,8 +100,8 @@ const CrearProductos = () => {
                   type="text"
                   id="descripcion"
                   name="descripcion"
-                  placeholder="descripcion"
-                  className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
+                  placeholder="Description"
+                  className="w-full mt-3 p-3 border rounded-3xl bg-gray-50"
                   value={descripcion}
                   onChange={onChange}
                 />
@@ -110,8 +110,8 @@ const CrearProductos = () => {
                   type="number"
                   id="stock"
                   name="stock"
-                  placeholder="stock"
-                  className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
+                  placeholder="Stock"
+                  className="w-full mt-3 p-3 border rounded-3xl bg-gray-50"
                   value={stock}
                   onChange={onChange}
                 />
@@ -120,8 +120,8 @@ const CrearProductos = () => {
                   type="number"
                   id="precio"
                   name="precio"
-                  placeholder="precio"
-                  className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
+                  placeholder="Price"
+                  className="w-full mt-3 p-3 border rounded-3xl bg-gray-50"
                   value={precio}
                   onChange={onChange}
                 />
@@ -131,8 +131,8 @@ const CrearProductos = () => {
                   type="text"
                   id="imagen"
                   name="imagen"
-                  placeholder="Imagen"
-                  className="w-full mt-3 p-3 border rounded-xl bg-gray-50"
+                  placeholder="Image Url"
+                  className="w-full mt-3 p-3 border rounded-3xl bg-gray-50"
                   value={imagen}
                   onChange={onChange}
                 />
@@ -142,7 +142,7 @@ const CrearProductos = () => {
               <input
                 type="submit"
                 value="Crear Productos"
-                className="bg-violet-600 mb-5 w-full py-3 text-white uppercase font-bold rounded hover:cursor-pointer hover:bg-violet-300 transition-colors"
+                className="bg-yellow-400 mb-5 w-full py-3 text-black uppercase font-bold rounded-3xl hover:cursor-pointer hover:bg-yellow-300 transition-colors"
               />
 
             </form>
