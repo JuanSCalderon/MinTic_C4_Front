@@ -50,8 +50,10 @@ export const ViewProductos = ({ producto }) => {
 
             <div className='flex flex-col lg:flex-row gap-2'>
                 <button
+                    type="submit"
+                    value="Update"
                     className="bg-yellow-400 px-4 py-3 text-black uppercase font-bold text-sm rounded-lg"
-                //onClick={() => handleModalEditarTarea(tarea)}
+                // onClick={(e) => actualizarProducto(e, producto._id)}
                 >Edit</button>
 
                 <button

@@ -12,11 +12,7 @@ const Login = () => {
     password: ''
   });
 
-<<<<<<< HEAD
-  const { email, password } = usuario;
-=======
-  const { email, password} = usuario; //Correo, Contraseña
->>>>>>> cda37b8f985cbc80147ef65d6cd96cd02eb9b4df
+  const { email, password } = usuario; //Correo, Contraseña
 
 
   const onChange = (e) => {
