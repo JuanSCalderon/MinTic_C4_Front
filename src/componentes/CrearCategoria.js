@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import React,{ useState } from "react"; //importamos archivos
+>>>>>>> cda37b8f985cbc80147ef65d6cd96cd02eb9b4df
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import { useNavigate } from 'react-router-dom';

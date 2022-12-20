@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; //importamos archivos
 import { Link, useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
 import crud from '../conexiones/crud';
