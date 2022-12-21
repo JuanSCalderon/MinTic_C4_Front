@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
 
   return (
-    <aside className="md:w-80 lg:w-60 px-5 py-10 bg-gradient-to-r from-yellow-600  to-black">
+    <aside className="md:w-80 lg:w-60 px-5 py-10 bg-gradient-to-r from-black  to-yellow-600">
 
 
       <Link

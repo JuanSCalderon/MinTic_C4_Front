@@ -102,7 +102,7 @@ const CrearCategoria = () => {
               </div>
               <input
                 type="submit"
-                value="Crear Categoria"
+                value="Create Category"
                 className="bg-yellow-400 mb-5 w-full py-3 text-black uppercase font-bold rounded-3xl hover:cursor-pointer hover:bg-yellow-300 transition-colors"
               />
 
